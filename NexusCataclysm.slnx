@@ -1,0 +1,21 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Pillar/">
+    <Project Path="Pillar/Pillar/Pillar.csproj">
+    </Project>
+    <Project Path="Pillar/PillarOfPillar/PillarOfPillar.csproj">
+    </Project>
+  </Folder>
+  <Project Path="NexusCataclysm.Client/NexusCataclysm.Client.csproj">
+  </Project>
+  <Project Path="NexusCataclysm.Core/NexusCataclysm.Core.csproj">
+  </Project>
+  <Project Path="NexusCataclysm.Server/NexusCataclysm.Server.csproj">
+  </Project>
+  <Project Path="NexusCataclysm.Shared/NexusCataclysm.Shared.csproj">
+  </Project>
+</Solution>
