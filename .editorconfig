@@ -1,0 +1,31 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+root = true
+
+[*.cs]
+indent_style = tab
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+csharp_new_line_before_open_brace = all
+csharp_new_line_before_else = true
+csharp_new_line_before_catch = true
+csharp_new_line_before_finally = true
+csharp_space_after_cast = true
+csharp_space_between_method_declaration_name_and_open_parenthesis = false
+
+# shut up those warning,we just need some of them
+dotnet_diagnostic.SA1000.severity = none
+dotnet_diagnostic.SA1001.severity = none
+dotnet_diagnostic.SA1009.severity = none
+dotnet_diagnostic.SA1011.severity = none
+dotnet_diagnostic.SA1027.severity = none
+dotnet_diagnostic.SA1600.severity = none
+dotnet_diagnostic.SA1101.severity = none
+dotnet_diagnostic.SA1200.severity = none
+dotnet_diagnostic.SA1117.severity = none
+dotnet_diagnostic.SA1502.severity = none
+dotnet_diagnostic.SA1503.severity = none
+dotnet_diagnostic.SA1629.severity = none
+dotnet_diagnostic.SA1633.severity = none
+dotnet_diagnostic.SA1642.severity = none

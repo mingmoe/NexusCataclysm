@@ -5,17 +5,31 @@
     <Platform Name="x86" />
   </Configurations>
   <Folder Name="/Pillar/">
-    <Project Path="Pillar/Pillar/Pillar.csproj">
-    </Project>
-    <Project Path="Pillar/PillarOfPillar/PillarOfPillar.csproj">
-    </Project>
+    <Project Path="Pillar/Autofac.Extension/Autofac.Extension/Autofac.Extension.csproj" />
+    <Project Path="Pillar/FNA/FNA.Core.csproj" />
+    <Project Path="Pillar/FontStashSharp/src/XNA/FontStashSharp.FNA.Core.csproj" />
+    <Project Path="Pillar/Moe.TextEngine/Moe.TextEngine/Moe.TextEngine.csproj" />
+    <Project Path="Pillar/Pillar/Pillar.csproj" />
+    <Project Path="Pillar/PillarOfPillar/PillarOfPillar.csproj" />
+    <Project Path="Pillar/ResourcesManager/Moe.ResourcesManager/Moe.ResourcesManager.csproj" />
+    <Project Path="Pillar/UniversalI18n/UniversalI18n/UniversalI18n.csproj" />
+    <Project Path="Pillar/UniversalNet/src/UniversalNet.Autofac/UniversalNet.Autofac.csproj" />
+    <Project Path="Pillar/UniversalNet/src/UniversalNet.Kestrel/UniversalNet.Kestrel.csproj" />
+    <Project Path="Pillar/UniversalNet/src/UniversalNet.MemoryPack/UniversalNet.MemoryPack.csproj" />
+    <Project Path="Pillar/UniversalNet/src/UniversalNet/UniversalNet.csproj" />
   </Folder>
-  <Project Path="NexusCataclysm.Client/NexusCataclysm.Client.csproj">
-  </Project>
-  <Project Path="NexusCataclysm.Core/NexusCataclysm.Core.csproj">
-  </Project>
-  <Project Path="NexusCataclysm.Server/NexusCataclysm.Server.csproj">
-  </Project>
-  <Project Path="NexusCataclysm.Shared/NexusCataclysm.Shared.csproj">
-  </Project>
+  <Folder Name="/解决方案项/">
+    <File Path=".editorconfig" />
+  </Folder>
+  <Folder Name="/解决方案项/scripts/">
+    <File Path="scripts/createLink.ps1" />
+    <File Path="scripts/format.ps1" />
+    <File Path="scripts/Initiate.ps1" />
+    <File Path="scripts/PlaceNativeLibrary.ps1" />
+    <File Path="scripts/release.ps1" />
+  </Folder>
+  <Project Path="NexusCataclysm.Client/NexusCataclysm.Client.csproj" />
+  <Project Path="NexusCataclysm.Core/NexusCataclysm.Core.csproj" />
+  <Project Path="NexusCataclysm.Server/NexusCataclysm.Server.csproj" />
+  <Project Path="NexusCataclysm.Shared/NexusCataclysm.Shared.csproj" />
 </Solution>

@@ -5,6 +5,37 @@
 		<TargetFramework>net9.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
+		<StartupObject>NexusCataclysm.Client.Launcher</StartupObject>
+
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
 	</PropertyGroup>
+
+	<ItemGroup>
+
+		<PackageReference Include="Fody" Version="6.9.2">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="ConfigureAwait.Fody" Version="3.3.2" />
+		<AdditionalFiles Include="../FodyWeavers.xml" />
+
+		<ProjectReference Include="../Pillar/FNA/FNA.Core.csproj" />
+		<ProjectReference Include="..\NexusCataclysm.Core\NexusCataclysm.Core.csproj" />
+
+		<ProjectReference Include="../Pillar/PillarOfPillar/PillarOfPillar.csproj" OutputItemType="Analyzer">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</ProjectReference>
+
+		<ProjectReference Include="..\Pillar\Moe.TextEngine\Moe.TextEngine\Moe.TextEngine.csproj" />
+
+		<ProjectReference Include="..\Pillar\ResourcesManager\Moe.ResourcesManager\Moe.ResourcesManager.csproj" />
+
+		<PackageReference Include="FontStashSharp.Rasterizers.FreeType" Version="1.1.9" />
+
+		<PackageReference Include="Lib.Harmony" Version="2.3.6">
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+	</ItemGroup>
 
 </Project>

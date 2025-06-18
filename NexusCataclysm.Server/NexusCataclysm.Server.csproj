@@ -7,4 +7,24 @@
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
 
+	<ItemGroup>
+		<ProjectReference Include="..\NexusCataclysm.Core\NexusCataclysm.Core.csproj" />
+
+		<ProjectReference Include="../Pillar/PillarOfPillar/PillarOfPillar.csproj" OutputItemType="Analyzer">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</ProjectReference>
+
+		<PackageReference Include="Fody" Version="6.9.2">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="ConfigureAwait.Fody" Version="3.3.2" />
+		<AdditionalFiles Include="../FodyWeavers.xml" />
+
+		<PackageReference Include="Lib.Harmony" Version="2.3.6">
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+	</ItemGroup>
+
 </Project>

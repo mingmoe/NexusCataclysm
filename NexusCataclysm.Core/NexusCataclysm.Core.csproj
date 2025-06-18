@@ -7,7 +7,44 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Mingmoe.Demystifier" Version="0.9.9" />
+		<None Remove="FodyWeavers.xml" />
+		<None Remove="stylecop.json" />
 	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Mingmoe.Demystifier" Version="0.9.9" />
+		<PackageReference Include="Semver" Version="3.0.0" />
+		<PackageReference Include="System.IO.Hashing" Version="9.0.6" />
+
+		<PackageReference Include="NLog" Version="5.5.0" />
+		<PackageReference Include="NLog.Extensions.Logging" Version="5.5.0" />
+
+		<ProjectReference Include="../Pillar/Pillar/Pillar.csproj" />
+
+		<ProjectReference Include="../Pillar/PillarOfPillar/PillarOfPillar.csproj" OutputItemType="Analyzer">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</ProjectReference>
+
+		<PackageReference Include="Fody" Version="6.9.2">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="ConfigureAwait.Fody" Version="3.3.2" />
+		<AdditionalFiles Include="../FodyWeavers.xml" />
+
+		<AdditionalFiles Include="stylecop.json" />
+
+		<ProjectReference Include="..\NexusCataclysm.Shared\NexusCataclysm.Shared.csproj" />
+		<PackageReference Include="ZString" Version="2.6.0" />
+
+		<!--Let user use .Thin package-->
+		<PackageReference Include="Lib.Harmony.Thin" Version="2.3.6" />
+	</ItemGroup>
+
+
+	<PropertyGroup>
+		<MeziantouAnalysisMode>None</MeziantouAnalysisMode>
+	</PropertyGroup>
 
 </Project>

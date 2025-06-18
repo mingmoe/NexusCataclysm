@@ -1,0 +1,9 @@
+
+*.zip
+*.xz
+*.gz
+*.tar
+*.zstd
+
+temp/
+output/
